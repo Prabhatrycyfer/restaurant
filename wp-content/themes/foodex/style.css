@@ -1,0 +1,241 @@
+/*
+Theme Name: Foodex
+Theme URI: http://shtheme.com/demosd/foodex
+Author: Shtheme
+Author URI: http://shtheme.com
+Description: Foodex is a fully responsive theme with a modern design suitable for all types of restaurants. The template is featuring a powerful fullscreen background video and imagery making it a perfect choice for restaurant owners.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: foodex
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+
+
+p.comment-form-cookies-consent{
+    display: none;
+}
+span.ajax-loader{
+    display: none!important;
+}
+div.wpcf7-response-output{
+    color: #111;
+    margin:30px 0 0 0;
+}
+.search-custom form input{
+    width: 100%;
+    padding: 9px 12px;
+    margin-top: 10px;
+    border: 1px solid #d1d1d1;
+    color: #111;
+}
+.search-custom form button{
+    border: 1px solid #111;
+    color: #fff;
+    font-size: 18px;
+    height: 46px;
+    position: relative;
+    width: 46px;
+    cursor: pointer;
+    float: right;
+    background: #111;
+    margin-top: -46px;
+    padding: 0;
+    letter-spacing: 0;
+}
+.search-custom form button:hover{
+    background: #fff;
+    border: 1px solid #111;
+    color: #111;
+}
+.search-custom h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #5f5f5f;
+    text-transform: inherit;
+    margin-bottom: 20px;
+}
+h3.comment-reply-title,
+.comment-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    color: #5f5f5f;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+#form input.submit{
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px dashed  #111;
+    width: auto;
+    position: relative;
+    width: 120px!important;
+    max-width: 120px;
+    height: 120px;
+    display: block;
+    transform: translate(-50%, -50%);
+    top: 80px;
+    left: 60px;
+    border-radius: 50%;
+}
+
+p.form-submit{
+    text-align: center;
+}
+p.logged-in-as{
+    margin-top: 30px;
+}
+.comments  article:last-child{
+    margin-bottom: -100px;
+}
+.white .more-button-bg-center.more-button-bg-center-dark.more-button-bg-center-dark-close{
+    border-color: #fff;
+}
+.white .more-button-txt-center.more-button-txt-center-close span{
+    color: #fff;
+}
+form.comment-form{
+    margin-top: 100px;
+}
+#form input.wpcf7-submit{
+    border-bottom: none;
+}
+
+
+body.dark {
+    color: #e0e0e0;
+    background: #151515;
+}
+.dark .preloader-bg{
+    background: #111;
+}
+.dark #preloader{
+    background: #111;
+}
+.dark .border-left,
+.dark .border-right,
+.dark .border-top,
+.dark .border-bottom{
+    background: #151515;
+}
+.dark .modal-content{
+    background: #111;
+}
+.dark .text h2 {
+    color: #e0e0e0;
+}
+.dark .owl-prev.disabled,.dark  .owl-next.disabled{
+    background: #2d2d2d!important;
+    color: #fff;
+}
+.dark .owl-prev,.dark  .owl-next{
+    background: #fff;
+    color: #111;
+}
+.dark .blog-quote p,.dark .blog-quote p span {
+    color: #e0e0e0;
+}
+.dark .comments h4{
+    color: #e0e0e0;
+}
+.dark .comment-time{
+    color: #e0e0e0!important;
+}
+.dark #form input,
+.dark #form textarea{
+    border-color: #fff;
+    color: #fff;
+}
+.dark #form input::placeholder,
+.dark #form textarea::placeholder{
+    color: #fff;
+}
+.dark .parallax > use:first-child{
+    fill: rgba(21, 21, 21, 0.7)!important;
+}
+.dark .parallax > use:nth-child(2){
+    fill: rgba(21, 21, 21, 0.5)!important;
+}
+.dark .parallax > use:nth-child(3){
+    fill: rgba(21, 21, 21, 0.3)!important;
+}
+.dark .parallax > use:nth-child(4){
+    fill: rgba(21, 21, 21)!important;
+}
+.dark .main-navigation-bg{
+        background: rgba(21, 21, 21, 1);
+}
+.dark .main-navigation-bg .main-navigation .navbar-nav li a{
+    color: #5f5f5f;
+}
+@media only screen and (max-width: 768px){
+.dark .main-navigation-bg .navbar-toggle .icon-bar {
+    background: #fff;
+}
+.dark .navbar-collapse {
+    background: rgba(21, 21, 21, 1);
+}
+.dark .main-navigation .navbar-nav li a{
+    color: #5f5f5f;
+}
+}
+
+.upper-page{
+    height: 100vh;
+}
+.elementor img.img-cover{
+    height: 100%!important;
+}
+.elementor .section-item img{
+    height: 66vh!important;
+}
+.elementor-lightbox{
+    display: none!important;
+}
+.elementor .wall-images img,
+.elementor .wall-images-reverse img{
+    height: 193px!important;
+    border-radius: 5%!important;
+}
+.elementor .slick-slide {
+    height: 550px;
+}
+@media only screen and (max-width: 880px){
+.elementor .slick-slide {
+    height: 450px;
+}
+}
+@media only screen and (max-width: 640px){
+.elementor .slick-slide {
+    height: 350px;
+}
+}
+
+body.customize-support .navbar-bg-switch.main-navigation-bg{
+    top: 30px;
+}
